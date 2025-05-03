@@ -24,4 +24,6 @@ All API usage adhered to Spotify’s Developer Terms of Use, and the collected d
 
 - [Spotify Web API](https://developer.spotify.com/documentation/web-api)
 - [Getting Started with Web API](https://developer.spotify.com/documentation/web-api/tutorials/getting-started)
+- [Spotify Developer Terms of Service](https://developer.spotify.com/terms)
+
 
