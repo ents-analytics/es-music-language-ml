@@ -1,0 +1,15 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore backup files
+*.sql~
+
+# Ignore Mac Finder tags
+*.AppleDouble
