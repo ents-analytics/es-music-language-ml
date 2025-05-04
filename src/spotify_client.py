@@ -1,0 +1,1 @@
+# Create and return an authenticated Spotify client that other scripts can use to access the API
