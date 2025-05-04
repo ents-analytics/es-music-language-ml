@@ -1,0 +1,18 @@
+name: spotify-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10 # Let Conda downgrade if needed
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - pip
+  - pip:
+      - spotipy
+      - python-dotenv
+      - plotly
+
