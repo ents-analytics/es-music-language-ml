@@ -1,0 +1,1 @@
+# Set up secure, authenticated communication between local machine and Spotify's Web API
