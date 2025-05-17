@@ -20,6 +20,8 @@ All API usage adhered to Spotify’s Developer Terms of Use, and the collected d
 
 ## Create a Spotify Account
 
+---
+
 ## Create a Python Working Environment
 
 1. Create the environment in the root project folder:
@@ -29,8 +31,16 @@ All API usage adhered to Spotify’s Developer Terms of Use, and the collected d
 2. Activate the spotify-env environment:
 	- conda activate spotify-env 
 	- conda install notebook ipykernel <# Install Jupyter and use the current environment as the notebook kernel #>
-		
+	
+---
 
+## Authenticate Credentials with Spotify Web API
+
+1. Create auth.py - this will set up secure, authenticated communication between local machine and Spotify's Web API.
+
+2. Create spotify_client.py - this will create and return an authenticated Spotify client that other scripts can use to access the API.
+
+3. 
 
 ---
 

@@ -9,6 +9,7 @@ It includes:
 - Feature engineering
 - Model training and validation
 - Experiment tracking and evaluation
+- [Spotify Web API integration] (https://developer.spotify.com/documentation/web-api)
 
 ---
 
