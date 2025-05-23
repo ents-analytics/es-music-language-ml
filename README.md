@@ -2,6 +2,8 @@
 
 ## Overview
 
+The project aims to answer: Can a machine learning model predict whether a track is Spanish-language based on its metadata and audio features? The methodology above is designed to test this hypothesis rigorously while aligning with business needs in music streaming and marketing.
+
 This project contains Python code for exploring, modeling, and evaluating machine learning approaches to solve [brief problem description — e.g. "customer churn prediction", "language trend forecasting", etc.].
 
 It includes:
