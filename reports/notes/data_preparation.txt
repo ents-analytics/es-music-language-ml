@@ -1,1 +1,33 @@
 -- Step-by-step notes on the initial data exploration of the Billboard dataset in Pandas
+
+1. Environment setup --CHECK
+2. Import the libraries
+3. Load the dataset --df = pd.read_csv('path/to/the/dataset.csv')
+4. Fetch basic summary statistics
+
+--UNDERSTANDING 'FREQ'--
+* This is the number of times a value appears in that column.
+* This is for object (categorical) columns.
+* For numerical columns, there are statistical summaries that are provided
+* Exception to this is if an int (1) were stored as "1". Pandas would treat that as a categorical object. This would need to be fixed during the data cleansing process.
+
+--UNDERSTANDING 'FREQ' IN THE CONTEXT OF CHART DATA--
+
+if Artist A released 'Te Amo' in 2010 and then Artist A re-released 'Te Amo' in 2020, but another artist, Artist B, released a completely different song with the same name, 'Te Amo', in 2024:
+
+The freq for 
+- song would be 3
+- artist would be 2
+- weeks-on-board would be irrelevant for 'freq' since it is a numerical and not categorical value
+
+
+--CHECK IN A CATEGORICAL COLUMN FOR NUMERICAL VALUES--
+* I performed this check: pd.to_numeric(bb['song'], errors='coerce').notna().sum() and found 442/330087 could be converted.
+* To explore in more depth: 
+
+
+--GENERAL NEW KNOWLEDGE--
+* NaN = Not a Number
+* isna = Is NaN
+* notna = Isn't NaN
+
