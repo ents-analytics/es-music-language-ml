@@ -31,3 +31,10 @@ The freq for
 * isna = Is NaN
 * notna = Isn't NaN
 
+They are useful because they enable:
+
+* Filtering of missing data
+* Counting missing vs valid entries
+* Cleaning or imputing datasets
+
+During initial data exploration, I used df.describe(include='all') to generate summary statistics across all columns. This produced a row labelled 'top', which presented the most frequent value from each individual column. At first glance, the output appeared to describe a single, coherent record — for example, combining the date '1958-08-04', the song title 'Stay', and the artist 'Taylor Swift'. However, closer inspection revealed that these values are calculated independently for each column and do not originate from the same row. This is an important distinction: while the visual layout implies a unified record, the output reflects per-column mode values with no relational integrity across columns. Unlike structured SQL tables — where each row represents a true record with semantic coherence — this Pandas summary should not be interpreted as such. This discrepancy highlights the need for caution when interpreting summary tables and reinforces the importance of cross-validating early impressions with more granular data inspection.
